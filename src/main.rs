@@ -8,7 +8,7 @@ fn main() {
             .read_line(&mut number)
             .expect("You did not enter a vild value");
 
-        // Converting the previous string answer to a now a signed 32bit integer
+        // Converting the previous string answer to a now a unsigned 64bit integer since im using 64-bit architecture
         let number: usize = number.trim().parse().expect("Please enter a number.");
     fibonacci(number);
 }
